@@ -43,5 +43,7 @@ export default {
       padding-bottom: 0
 
   .logo
-    width: 150px
+    width: 80px
+    +desktop()
+      width: 150px
 </style>
