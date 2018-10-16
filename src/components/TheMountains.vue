@@ -1,9 +1,17 @@
 <template>
   <div class="TheMountains">
-    <img src="@/assets/images/mountains/left_blue.svg" class="mountain mountain--left mountain--left-blue" alt="">
-    <img src="@/assets/images/mountains/right_blue.svg" class="mountain mountain--right mountain--right-blue" alt="">
-    <img src="@/assets/images/mountains/right_green.svg" class="mountain mountain--right mountain--right-green" alt="">
-    <img src="@/assets/images/mountains/left_green.svg" class="mountain mountain--left mountain--left-green" alt="">
+    <div class="mountain mountain--left mountain--left-blue">
+      <img src="@/assets/images/mountains/left_blue.svg" alt="">
+    </div>
+    <div class="mountain mountain--right mountain--right-blue">
+      <img src="@/assets/images/mountains/right_blue.svg" alt="">
+    </div>
+    <div class="mountain mountain--right mountain--right-green">
+      <img src="@/assets/images/mountains/right_green.svg" alt="">
+    </div>
+    <div class="mountain mountain--left mountain--left-green">
+      <img src="@/assets/images/mountains/left_green.svg" alt="">
+    </div>
   </div>
 </template>
 
@@ -14,6 +22,12 @@ export default {
 </script>
 <style lang="stylus">
 @import '~@/assets/styles/vars'
+mountainAnimation(name, delay = 0.1s, duration = 1s)
+  animation-name: name
+  animation-delay: 0.2s + delay
+  animation-duration: duration
+  animation-fill-mode both
+
 .TheMountains
   width: 100%
   position: relative
@@ -29,20 +43,31 @@ export default {
   +desktop() {
     bottom: -10%
   }
+  img
+    display: block
   &--left
     left: 0
     &-blue
       width: 115vw
       transform: translateX(-50%)
+      img
+        mountainAnimation(slideInLeft, .3)
     &-green
       width: 65vw
       transform: translateX(-18%)
+      img
+        mountainAnimation(slideInLeft)
+
   &--right
     right: 0
     &-blue
       width: 85vw
       transform: translateX(30%)
+      img
+        mountainAnimation(slideInRight, .3)
     &-green
       width: 65vw
       transform: translateX(12%)
+      img
+        mountainAnimation(slideInRight)
 </style>

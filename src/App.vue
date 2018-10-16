@@ -15,6 +15,7 @@ export default {
 <style lang="stylus" src="@/assets/styles/glacial.styl"></style>
 <style lang="stylus">
 @import "~@/assets/styles/vars"
+@import "~@/assets/styles/animations"
 
 html, body
   padding 0
