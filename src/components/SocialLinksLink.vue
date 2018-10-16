@@ -29,11 +29,9 @@ export default {
 @import '~@/assets/styles/vars'
 
 .SocialLinksLink
-  padding: 1rem 2rem
+  padding: 1rem 0.7rem
   display: block
   def-transit()
-  +desktop()
-    padding: 1rem 1.5rem
   .image
     width: 46px
     height: 46px
