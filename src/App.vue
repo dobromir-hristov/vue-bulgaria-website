@@ -9,6 +9,9 @@ import Landing from './components/Landing'
 
 export default {
   name: 'app',
+  mounted () {
+    this.$ga.page('/')
+  },
   components: { Landing }
 }
 </script>
