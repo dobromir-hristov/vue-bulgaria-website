@@ -3,6 +3,7 @@
     <div class="wrapper">
       <img src="@/assets/logo.png" class="logo" alt="Vue Bulgaria">
       <the-title/>
+      <app-events/>
       <the-social-links/>
     </div>
     <the-mountains/>
@@ -10,16 +11,14 @@
 </template>
 
 <script>
+import AppEvents from './AppEvents'
 import TheMountains from './TheMountains'
 import TheSocialLinks from './TheSocialLinks'
 import TheTitle from './TheTitle'
 
 export default {
   name: 'Landing',
-  components: { TheSocialLinks, TheTitle, TheMountains },
-  data () {
-    return {}
-  }
+  components: { AppEvents, TheSocialLinks, TheTitle, TheMountains }
 }
 </script>
 
