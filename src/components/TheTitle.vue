@@ -22,7 +22,7 @@ export default {
   margin: 2rem 0;
   color: $blue
   font-weight: 600;
-  font-size: 45px;
+  font-size: 35px;
   +desktop() {
     font-size: 85px;
   }

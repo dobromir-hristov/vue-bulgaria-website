@@ -1,7 +1,7 @@
 <template>
   <div class="Landing">
     <div class="wrapper">
-      <img src="@/assets/logo.png" class="logo" alt="Vue Bulgaria">
+      <img src="@/assets/logo.svg" class="logo" alt="Vue Bulgaria">
       <the-title/>
       <app-events/>
       <the-social-links/>
