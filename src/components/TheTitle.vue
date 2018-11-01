@@ -20,10 +20,9 @@ export default {
 
 .TheTitle
   margin: 2rem 0;
-  font-family: 'glacialIndifference', sans-serif;
-  font-weight: 600;
   color: $blue
-  font-size: 45px;
+  font-weight: 600;
+  font-size: 35px;
   +desktop() {
     font-size: 85px;
   }
