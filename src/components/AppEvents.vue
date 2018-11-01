@@ -29,7 +29,7 @@ export default {
         {
           title: 'Go to the Beginners Workshop Facebook event',
           body: 'Vue Beginners Workshop - 01.12.2018',
-          href: '#'
+          href: 'https://www.facebook.com/events/1961707377247690/'
         }
       ]
     }
