@@ -31,7 +31,7 @@ mountainAnimation(name, delay = 0.1s, duration = 1s)
 .TheMountains
   width: 100%
   position: relative
-  overflow: hidden
+  /*overflow: hidden*/
   flex: 1
   min-height: 24vw
   +desktop()

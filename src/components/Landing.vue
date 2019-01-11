@@ -37,6 +37,7 @@ export default {
     padding: 2rem
     padding-bottom: 0
     overflow-x hidden
+    z-index: 1
     +desktop()
       padding: 4rem
       padding-bottom: 0
