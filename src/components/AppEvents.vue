@@ -17,7 +17,7 @@
           {{ event.body }} - <b>{{ event.date | date }}</b>
         </a>
         <a
-          v-if="event.tickets & !isPassed(event)"
+          v-if="event.tickets && !isPassed(event)"
           :href="event.tickets"
           target="_blank"
           class="tickets"
