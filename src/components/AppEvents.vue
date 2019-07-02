@@ -2,17 +2,29 @@
   <div class="AppEvents">
     <h2>Events:</h2>
     <div class="events-list">
-      <a
-          v-for="(event, index) in events"
-          :key="index"
+      <div
+        v-for="(event, index) in events"
+        :key="index"
+        class="event-wrapper"
+      >
+        <a
           :class="{ 'event--passed': isPassed(event) }"
           :href="event.href"
           :title="event.title"
           target="_blank"
           class="event"
-      >
-        {{ event.body }} - <b>{{ event.date | date }}</b>
-      </a>
+        >
+          {{ event.body }} - <b>{{ event.date | date }}</b>
+        </a>
+        <a
+          v-if="event.tickets & !isPassed(event)"
+          :href="event.tickets"
+          target="_blank"
+          class="tickets"
+        >
+          (tickets)
+        </a>
+      </div>
     </div>
   </div>
 
@@ -27,6 +39,13 @@ export default {
   data () {
     return {
       events: [
+        {
+          title: 'Go to Vue Bulgaria Summer Talks event',
+          body: 'Vue Bulgaria Summer Talks',
+          href: 'https://www.facebook.com/events/433679863851443/',
+          date: Date.parse('27 Jul 2019'),
+          tickets: 'https://vuebulgaria-meetup-3.eventbrite.com'
+        },
         {
           title: 'Go to Vue Beginners Workshop V2 Facebook event',
           body: 'Vue Beginners Workshop v2',
@@ -57,15 +76,19 @@ export default {
 .AppEvents
   margin-bottom: 2rem;
 
-.event
+.event-wrapper
   font-size: 1.3rem
   margin-bottom: 1rem
+
+.event
   cursor: pointer
-  display: block
 
   &--passed
     opacity .5
 
     &:hover
       opacity 1
+
+  & + .tickets
+    margin-left: .5rem
 </style>
