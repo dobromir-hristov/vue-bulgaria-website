@@ -1,5 +1,5 @@
 <template>
-  <div class="Landing">
+  <div class="Home">
     <div class="wrapper">
       <img src="@/assets/logo.svg" class="logo" alt="Vue Bulgaria">
       <the-title/>
@@ -11,20 +11,20 @@
 </template>
 
 <script>
-import AppEvents from './AppEvents'
-import TheMountains from './TheMountains'
-import TheSocialLinks from './TheSocialLinks'
-import TheTitle from './TheTitle'
+import AppEvents from '@/components/AppEvents'
+import TheMountains from '@/components/TheMountains'
+import TheSocialLinks from '@/components/TheSocialLinks'
+import TheTitle from '@/components/TheTitle'
 
 export default {
-  name: 'Landing',
+  name: 'Home',
   components: { AppEvents, TheSocialLinks, TheTitle, TheMountains }
 }
 </script>
 
 <style lang="stylus">
 @import "~@/assets/styles/vars"
-.Landing
+.Home
   min-height: 100vh
   display: flex
   flex-flow: column

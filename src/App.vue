@@ -1,20 +1,8 @@
 <template>
   <div id="app">
-    <landing/>
+    <router-view/>
   </div>
 </template>
-
-<script>
-import Landing from './components/Landing'
-
-export default {
-  name: 'app',
-  mounted () {
-    this.$ga.page('/')
-  },
-  components: { Landing }
-}
-</script>
 <style lang="stylus" src="@/assets/styles/glacial.styl"></style>
 <style lang="stylus">
 @import "~@/assets/styles/vars"
