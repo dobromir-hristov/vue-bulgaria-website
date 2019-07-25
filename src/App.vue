@@ -5,6 +5,7 @@
 </template>
 <style lang="stylus" src="@/assets/styles/glacial.styl"></style>
 <style lang="stylus">
+@import "~@/assets/styles/app"
 @import "~@/assets/styles/vars"
 @import "~@/assets/styles/animations"
 

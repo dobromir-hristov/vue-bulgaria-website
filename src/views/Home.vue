@@ -11,10 +11,10 @@
 </template>
 
 <script>
+import TheTitle from '@/components/TheTitle'
 import AppEvents from '@/components/AppEvents'
 import TheMountains from '@/components/TheMountains'
 import TheSocialLinks from '@/components/TheSocialLinks'
-import TheTitle from '@/components/TheTitle'
 
 export default {
   name: 'Home',
@@ -28,6 +28,7 @@ export default {
   min-height: 100vh
   display: flex
   flex-flow: column
+
   .wrapper
     display: flex
     align-items: center
@@ -41,9 +42,4 @@ export default {
     +desktop()
       padding: 4rem
       padding-bottom: 0
-
-  .logo
-    width: 80px
-    +desktop()
-      width: 150px
 </style>
