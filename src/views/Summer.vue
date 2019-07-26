@@ -25,9 +25,7 @@
           </button>
         </form>
         <div class="w-3/4 lg:w-1/3 mx-auto py-4 text-gray-600 text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci architecto aspernatur at delectus est, et, eveniet id incidunt
-          inventore iste magnam maxime molestias nemo nihil placeat provident quaerat qui quidem temporibus. Ad autem cum deserunt dolores fugiat
-          incidunt laboriosam mollitia, nesciunt odit officia perferendis perspiciatis possimus qui totam vel!
+          The awesome guys at Vue School are gladly supporting Bulgaria’s growing Vue community. They are dedicated to making Vue education accessible to everyone, which is why they introduced the 62% price power parity discount 💸. Enter the crossword puzzle solution from the golden letters to claim your Vue School prize and get your first month for just $5 ☺️
         </div>
       </div>
       <div class="sponsors text-center pb-6">
@@ -35,8 +33,8 @@
           With the help of these <span class="font-bold">awesome</span> folks:
         </div>
         <div class="flex items-center justify-center">
-          <img src="https://placehold.it/150x50?text=dopamine" alt="dopamine logo" class="w-32 px-2">
-          <img src="@/assets/images/vueschool.png" alt="vueschool logo" class="w-32 px-2">
+          <a href="https://dopamine.bg" target="_blank"><img src="@/assets/images/dopamine.png" alt="dopamine logo" class="w-32 px-2"></a>
+          <a href="https://vueschool.io" target="_blank"><img src="@/assets/images/vueschool.png" alt="vueschool logo" class="w-32 px-2"></a>
         </div>
       </div>
     </div>
